@@ -26,9 +26,9 @@ return (
 )
 ```
 参数：
-  qrCodeUrl->二维码url
-  logoUrl-> 二维码下行小图标logo
-  iframeId-> 如果页面嵌入iframe为iframe的id
-![image1](./example/1.png)
-![image2](./example/2.png)
-![image2](./example/3.png)
+  qrCodeUrl->二维码url    
+  logoUrl-> 二维码下行小图标logo    
+  iframeId-> 如果页面嵌入iframe为iframe的id    
+![image1](./example/1.png)    
+![image2](./example/2.png)    
+![image2](./example/3.png)    
