@@ -1,11 +1,14 @@
-.qr-part {
+.qr div {
+  box-sizing: border-box;
+}
+.qr .qr-part {
   position: fixed;
   height: 32px;
   bottom: 65px;
   right: 7px;
   cursor: pointer;
 }
-.qr-part:hover .qr-text {
+.qr .qr-part:hover .qr-text {
   position: absolute;
   text-align: center;
   background: #363d41;
@@ -19,10 +22,14 @@
   display: inline-block;
   width: 66px;
 }
-.qr-part .qr-text {
+.qr .qr-part .qr-text {
   display: none;
 }
-.qr-part .qr-icon {
+.qr .qr-part .qr-text .qr-text-p {
+  margin: 0;
+  padding: 0;
+}
+.qr .qr-part .qr-icon {
   position: absolute;
   text-align: center;
   width: 32px;
@@ -32,7 +39,7 @@
   top: 0;
   right: 1px;
 }
-.qr-code {
+.qr .qr-code {
   position: fixed;
   text-align: center;
   font-size: 12px;
@@ -44,24 +51,24 @@
   background-color: #ffffff;
   border-radius: 5px;
 }
-.qr-code .qr-code-img {
+.qr .qr-code .qr-code-img {
   width: 100%;
   height: 130px;
   margin: 0 0 10px 0;
 }
-.qr-code .qr-code-img img {
+.qr .qr-code .qr-code-img img {
   width: 100%;
   height: 100%;
 }
-.qr-code .qr-ding-icon {
+.qr .qr-code .qr-ding-icon {
   float: left;
   width: 18px;
   height: 18px;
 }
-.imgShow {
+.qr .imgShow {
   animation: spread .3s forwards;
 }
-.imgHide {
+.qr .imgHide {
   animation: packUp .3s forwards;
 }
 @keyframes spread {

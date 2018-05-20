@@ -44,13 +44,13 @@ export default class QRcode extends React.Component {
     const { qrShow } = this.state;
     const { qrCodeUrl, logoUrl } = this.props;
     return (
-      <div>
+      <div className="qr">
         <div className="qr-part" >
           <div className="qr-icon" >
             <i className="fa fa-comments" />
           </div>
           <div className="qr-text" onClick={e => this.handleClick(e)}>
-            <p>加用户群</p>
+            <p className="qr-text-p">加用户群</p>
           </div>
         </div>
         <div className={`qr-code ${qrShow ? 'imgShow' : 'imgHide'}`}>
