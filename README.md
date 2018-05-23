@@ -32,6 +32,10 @@ return (
 
   iframeId-> 如果页面嵌入iframe为iframe的id    
 
+  iconClassName-> 图标块自定义class    
+
+  imgClassName-> 滑出二维码区域自定义class
+
 ![image1](./example/1.png)    
 
 ![image2](./example/2.png)    

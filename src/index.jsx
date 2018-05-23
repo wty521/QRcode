@@ -6,6 +6,8 @@ export default class QRcode extends React.Component {
     iframeId: '',
     qrCodeUrl: '',
     logoUrl: '',
+    iconClassName: '',
+    imgClassName: '',
     // qrCodeUrl: '//dpubstatic.udache.com/static/dpubimg/39377/Hk6EEzh0G.png',
     // logoUrl: '//dpubstatic.udache.com/static/dpubimg/39377/B1qBEMnAf.png',
   }
@@ -13,6 +15,8 @@ export default class QRcode extends React.Component {
     iframeId: PropTypes.string,
     qrCodeUrl: PropTypes.string,
     logoUrl: PropTypes.string,
+    iconClassName: PropTypes.string,
+    imgClassName: PropTypes.string,
   }
   constructor(props) {
     super(props);
@@ -42,10 +46,15 @@ export default class QRcode extends React.Component {
   }
   render() {
     const { qrShow } = this.state;
-    const { qrCodeUrl, logoUrl } = this.props;
+    const {
+      qrCodeUrl,
+      logoUrl,
+      iconClassName,
+      imgClassName,
+    } = this.props;
     return (
       <div className="qr">
-        <div className="qr-part" >
+        <div className={`qr-part ${iconClassName}`} >
           <div className="qr-icon" >
             <i className="fa fa-comments" />
           </div>
@@ -53,7 +62,7 @@ export default class QRcode extends React.Component {
             <p className="qr-text-p">加用户群</p>
           </div>
         </div>
-        <div className={`qr-code ${qrShow ? 'imgShow' : 'imgHide'}`}>
+        <div className={`qr-code ${qrShow ? 'imgShow' : 'imgHide'} ${imgClassName}`}>
           <div className="qr-code-img">
             <img src={qrCodeUrl} alt="群二维码" />
           </div>
