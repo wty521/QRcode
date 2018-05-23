@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/wty521/QRcode.git"
+    "url": "https://github.com/wty521/react-side-qrcode"
   },
   "author": "wangtianyu",
   "license": "ISC",
